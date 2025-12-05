@@ -8,13 +8,13 @@
       content="Maha Tej Technologies – CFD and mechanical engineering services using simulation, design and data to deliver sustainable, efficient solutions." />
 
 
-  <style>
+    <style>
     :root {
       --brand-orange: #f97316;
-      --brand-blue: #2563eb;         /* flame blue */
+      --brand-blue: #2563eb;     /* flame blue */
       --brand-white: #ffffff;
       --brand-bg: #f5f5f5;
-      --text-main: #111827;          /* black-ish text everywhere */
+      --text-main: #111827;      /* black-ish text */
       --text-muted: #4b5563;
     }
 
@@ -29,9 +29,9 @@
 
     a { color: inherit; }
 
-    /* TOP WRAPPER + GRADIENT */
+    /* HEADER BACKGROUND (gradient) */
 
-    .site--wrapper {
+    .site-header-wrapper {
       background: linear-gradient(
         120deg,
         var(--brand-orange) 0%,
@@ -61,25 +61,28 @@
     }
 
     .logo {
-      width: 180px;       /* bigger logo */
+      width: 150px;
       height: auto;
-      /* remove white background + card */
-      border-radius: 0;
+      border-radius: 0;           /* no white card behind logo */
       background-color: transparent;
       padding: 0;
       box-shadow: none;
+    }
+
+    .brand-text {
+      text-align: center;         /* centre tagline under company name */
     }
 
     .brand-text h1 {
       font-size: 1.5rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--brand-white);  /* brand name on gradient */
+      color: var(--brand-white);
     }
 
     .brand-text p {
-      font-size: 0.8rem;
-      opacity: 0.95;
+      font-size: 0.9rem;
+      font-weight: 600;           /* tagline bold */
       color: var(--brand-white);
     }
 
@@ -109,38 +112,38 @@
 
     /* HERO */
 
-   header.hero {
-  max-width: 720px;              /* a bit narrower so it sits nicely under the logo/name */
-  margin: 0 auto;                /* centre the block itself */
-  padding: 0.8rem 1.5rem 2.4rem;
-  text-align: center;            /* centre tagline + text */
-  color: var(--brand-white);
-}
+    header.hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0.8rem 1.5rem 2.4rem;
+      text-align: center;         /* centre hero text under header */
+      color: var(--brand-white);
+    }
 
-   header.hero h2 {
-  font-size: 1.6rem;      /* or 1.7 / 1.8 if you want larger */
-  font-weight: 700;       /* bold */
-  opacity: 1;
-  margin-bottom: 0.6rem;
-}
+    header.hero h2 {
+      font-size: 1.7rem;          /* bigger, bold tagline or main line */
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
 
     header.hero h3 {
-      font-size: 2.1rem;
-      font-weight: 650;
+      font-size: 1.4rem;
+      font-weight: 600;
       margin-bottom: 0.6rem;
     }
 
     header.hero p {
       max-width: 640px;
       font-size: 0.98rem;
-      margin-bottom: 1.5rem;
+      margin: 0 auto 1.5rem;
     }
 
     .hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;    /* buttons centred under text */
+    }
 
     .btn {
       display: inline-block;
@@ -188,13 +191,13 @@
       padding: 1.6rem 1.5rem 1.9rem;
       box-shadow: 0 10px 26px rgba(37, 99, 235, 0.15);
       margin-bottom: 1.5rem;
-      color: var(--text-main);        /* all section text black */
+      color: var(--text-main);      /* black text in sections */
     }
 
     section h2 {
       font-size: 1.3rem;
       margin-bottom: 0.85rem;
-      color: var(--text-main);        /* headings black */
+      color: var(--text-main);      /* headings black */
     }
 
     section p {
@@ -225,7 +228,7 @@
     h3 {
       font-size: 1rem;
       margin-bottom: 0.3rem;
-      color: var(--text-main);        /* sub-headings black */
+      color: var(--text-main);      /* sub-headings black */
     }
 
     ul { list-style: none; margin-top: 0.5rem; }
@@ -239,7 +242,7 @@
 
     li::before {
       content: "•";
-      color: var(--brand-orange);     /* orange bullet */
+      color: var(--brand-orange);   /* orange bullet */
       position: absolute;
       left: 0;
       top: 0;
@@ -277,7 +280,7 @@
     }
 
     .contact-row a {
-      color: var(--text-main);        /* links black by default */
+      color: var(--text-main);      /* links black in contact */
       text-decoration: none;
     }
 
@@ -297,6 +300,7 @@
       font-size: 0.9rem;
     }
   </style>
+
 </head>
 <body>
 
